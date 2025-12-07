@@ -1,0 +1,25 @@
+/* layout.css */
+.container {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr 4fr; /* two columns: sidebar = 1, main = 4 → 1/5 : 4/5 */
+  gap: 10px; /* optional space between columns */
+  background-color: black;
+  padding: 10px;
+
+}
+
+.sidebar {
+  background-color: #0b1763;
+  padding: 10px;
+  /* no need for width/height override */
+  border-radius: 5px;
+}
+
+.mainbar {
+  background-color: #0b1763;
+  padding: 10px;
+  border-radius: 5px;
+}

@@ -1,0 +1,78 @@
+/* sidebar.css */
+
+.side_container {
+  display: grid;
+  grid-template-rows: 1fr 6fr 1fr;  
+  gap: 10px;      
+  margin: 0;
+  padding: 0;
+  height:100%;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+
+.grid1 {
+  background-color: #1b1b6d;
+  padding: 10px;
+  border-radius: 5px;
+  overflow: hidden ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.grid1 h1 {
+  color: white;
+  font-size: 20px;
+
+}
+
+
+.grid2 {
+  background-color:  #1b1b6d;
+  padding: 10px;
+  border-radius: 5px;
+  overflow-y: auto; /* Add vertical scrolling for long lists */
+}
+
+
+.grid3 {
+  background-color:  #1b1b6d;
+  padding: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.grid3 h2 {
+  color: white;
+  font-size: 20px;
+
+}
+
+
+/* Example styling for the list inside grid2 */
+.grid2 ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.grid2 ul li {
+  margin: 10px 0;
+  padding: 8px; /* Add consistent padding */
+  cursor: pointer;
+  border-radius: 3px;
+  transition: background-color 0.2s, transform 0.1s; /* Smooth transitions */
+  color: white;
+}
+
+.grid2 ul li:hover {
+  background-color: #6d6dbd;
+  /* Remove padding from hover - it's already set above */
+  transform: translateX(5px); /* Subtle movement on hover */
+  color: black;
+}
+
+
+
