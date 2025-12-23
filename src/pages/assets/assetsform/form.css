@@ -1,15 +1,66 @@
 .container-form{
-    background-color: #fff;
-    border-radius: 15px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.2);
-    padding: 10px 20px;
-    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
     height: 100vh;
-    width: 100%;
-    text-align: center;
-    margin: auto;
-    margin-top: 20px;
 
+    width: auto;
+    overflow:auto;
+}
+.form-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    color: white;
+  
 }
 
-
+.form-header-h1{
+    color: white;
+    font-size: 20px;
+}
+.btn-cancel{
+    
+    margin: 20px 10px;
+    align-self:normal;
+    
+}
+.form-submit{
+    display:flex;
+    flex-direction: column;
+    align-items:flex;
+    gap: 15px;
+    padding: 20px;
+}
+form fieldset{
+    border: 1px solid #ccc;
+    color: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+.form-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto ;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+}
+.condition{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+select{
+    width: 100%;
+    height: 40px;
+}
+.form-actions{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 0 30px;
+}

@@ -132,17 +132,11 @@ const Form = () => {
   return (
     <div className='container-form'>
       <div className="form-header">
-        <h1>Asset Transfer Form</h1>
-        <button 
-          type="button" 
-          className="btn-cancel"
-          onClick={handleCancel}
-        >
-          Cancel
-        </button>
+        <h1 className='form-header-h1'>Asset Transfer Form</h1>
+        
       </div>
       
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className='form-submit'>
         {/* Personal Information Section */}
         <fieldset>
           <legend>Personal Information</legend>
@@ -267,6 +261,7 @@ const Form = () => {
             <div className="form-group">
               <label htmlFor="condition">Condition</label>
               <select 
+                
                 name="condition" 
                 id="condition" 
                 value={values.condition}
